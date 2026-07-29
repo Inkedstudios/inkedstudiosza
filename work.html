@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Our Work — Inked Studios</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="fullscreen-menu" id="fullMenu">
+  <button class="menu-close" id="menuClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="work.html" class="current">Work</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html"><img src="assets/logo.svg" alt="Inked Studios"></a>
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-img">
+    <img src="assets/Work/Copy of Social (Banner Landscape) (1).svg" alt="Our Work">
+    <div class="img-ph">
+      <div class="img-ph-icon"></div>
+      <div class="img-ph-label"></div>
+    </div>
+  </div>
+  <div class="page-hero-gradient"></div>
+  <div class="page-hero-lines"></div>
+  <div class="page-hero-accent"></div>
+  <h1>
+    <em style="color:var(--white);font-style:normal;">Some stuff</em><br>
+    <span class="outline" style="color:var(--purple-light);">We've Done</span>
+  </h1>
+  <p class="page-hero-sub">A curated selection of projects across branding, web and print, each one built with purpose.</p>
+</header>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterWork('all', this)">All Projects</button>
+  <button class="filter-btn" onclick="filterWork('brand', this)">Brand Identity</button>
+  <button class="filter-btn" onclick="filterWork('print', this)">Print</button>
+  <button class="filter-btn" onclick="filterWork('graphic', this)">Graphic Design</button>
+</div>
+
+<!-- WORK GRID -->
+<div class="work-grid">
+
+  <!-- Card 1 -->
+  <div class="work-card" data-cat="brand">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-1">
+        <img src="assets/Work/Bufferzone Villa.svg" alt="Bufferzone Villa">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Brand Identity</div>
+        <div class="work-title">Bufferzone Villa</div>
+        <div class="work-desc">Brand identity for a luxury residential project.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="work-card" data-cat="graphic">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-2">
+        <img src="assets/Work/Company Profile - Mgwebi.svg" alt="Mgwebi Trading">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Graphic Design</div>
+        <div class="work-title">Mgwebi Trading</div>
+        <div class="work-desc">Corporate business profile design.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="work-card" data-cat="brand">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-3">
+        <img src="assets/Work/Molapo Accountants.svg" alt="Molapo Accountants & Advisors">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Brand Identity</div>
+        <div class="work-title">Molapo Accountants & Advisors</div>
+        <div class="work-desc">Corporate brand identity and stationery for an accounting firm.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="work-card" data-cat="graphic">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-4">
+        <img src="assets/Work/Credit Fin Loans.svg" alt="Credit Fin Loans">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Graphic Design</div>
+        <div class="work-title">Social Media Campaign Graphics</div>
+        <div class="work-desc">Social media graphics for a financial services business for their 2024 Black Friday campaign.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="work-card" data-cat="graphic">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-5">
+        <img src="assets/Work/ZM Attoneys.svg" alt="ZM Attoneys">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Graphic Design</div>
+        <div class="work-title">ZM Attoneys</div>
+        <div class="work-desc">Business stationery design for a legal firm.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="work-card" data-cat="brand">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-6">
+        <img src="assets/Work/Molapo Wealth.svg" alt="Molapo Wealth">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Brand Identity</div>
+        <div class="work-title">Molapo Wealth</div>
+        <div class="work-desc">Financial advisory brand built from scratch.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="work-card" data-cat="print">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-7">
+        <img src="assets/Work/Wabane Chemicals.svg" alt="Wabane Chemicals">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Print</div>
+        <div class="work-title">Wabane Chemicals</div>
+        <div class="work-desc">Brochure design and printing for a chemical manufacturing company.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="work-card" data-cat="brand">
+    <div class="work-card-inner">
+      <div class="work-card-bg bg-8">
+        <img src="assets/Work/Only Jesus Christ Ministries.svg" alt="Only Jesus Christ Ministries">
+        <div class="work-pattern"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div class="img-ph-icon" style="font-size:3.5rem;opacity:.18;"></div>
+        </div>
+      </div>
+      <div class="work-overlay">
+        <div class="work-cat">Brand Identity</div>
+        <div class="work-title">Only Jesus Christ Ministries</div>
+        <div class="work-desc">Brand identity redesign for a Christian ministry organization.</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /work-grid -->
+
+<!-- CTA -->
+<div style="text-align:center;padding:4rem 5vw;">
+  <p style="color:var(--text-muted);margin-bottom:1.5rem;">Have a project in mind? Let's make something great together.</p>
+  <a href="contact.html" class="btn-primary">Start Your Project →</a>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Like What You <em style="font-style:normal;color:var(--lavender);">See?</em></h2>
+  <p>Let's create your next standout project.</p>
+  <a href="contact.html" class="btn-primary" style="display:inline-flex;">Get in Touch →</a>
+</div>
+
+<!-- S6: INFO -->
+<section id="s6">
+  <div class="info-grid">
+    <div>
+      <div><img src="assets/Inked_S6.svg" style="width:160px;" alt="Inked Studios Logo"></div>
+      <p class="info-slogan">Envisioning brands since 2019. We bring bold ideas to life through design, code and ink.</p>
+    </div>
+    <div class="info-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="info-col">
+      <h4>Contact</h4>
+      <p class="contact-detail-line">215 Khathide Street, Etwatwa, 1519</p><br>
+      <p class="contact-detail-line"><a href="mailto:lucky@inkedstudios.co.za">lucky@inkedstudios.co.za</a></p><br>
+      <p class="contact-detail-line"><a href="tel:+27647059325">+27 (0)64 705 9325</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- S7: FOOTER -->
+<footer id="s7">
+  <div class="footer-bar">
+    <span class="footer-copy">Inked Studios 2026 &nbsp;|&nbsp; All rights reserved.</span>
+    <div class="social-icons">
+      <a class="social-icon" href="https://x.com/Inkedd_studios" target="_blank" rel="noopener" aria-label="X / Twitter">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.737l7.73-8.835L1.254 2.25H8.08l4.264 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.instagram.com/inkedd_studios?igsh=MWl4b2VjZGhzd2Q4eA==" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.linkedin.com/company/inkeddgs/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.facebook.com/share/1HVpyznXj1/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

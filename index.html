@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Inked Studios — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- FULLSCREEN MENU -->
+<div class="fullscreen-menu" id="fullMenu">
+  <button class="menu-close" id="menuClose">✕</button>
+  <a href="index.html" class="current">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Work</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <img src="assets/logo.svg" alt="Inked Studios">
+  </a>
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ S1: HERO ══ -->
+<section id="s1" style="position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:0 6vw;">
+  <!-- HERO BACKGROUND: replace <div class="hero-ph-bg"> with a <video> or <img> tag -->
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline
+        style="position:absolute;
+               inset:0;
+               width:100%;
+               height:100%;
+               object-fit:cover;">
+        <source src="assets/intro.mp4" type="video/mp4">
+    </video>
+</div>
+  <div style="position:absolute;inset:0;background:rgba(8,14,28,.72);z-index:1;"></div>
+  <div style="position:relative;z-index:2;max-width:860px;">
+    <div style="font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--purple-light);font-weight:700;margin-bottom:1.6rem;">Graphic Design · Web Development · Printing</div>
+    <h1 style="font-size:clamp(2.8rem,7.5vw,6.5rem);font-weight:900;line-height:.96;letter-spacing:-.03em;text-transform:uppercase;margin-bottom:1.8rem;">
+      Let's Build<br>Something that <em style="font-style:normal;color:var(--purple-light);">Excels.</em>
+    </h1>
+    <p style="font-size:clamp(.95rem,1.5vw,1.15rem);color:rgba(255,255,255,.65);line-height:1.75;max-width:520px;margin:0 auto 2.8rem;font-weight:300;">Over 5 years of creating visual stories that move people, grow brands and leave lasting impressions.</p>
+    <div class="hero-actions" style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;">
+      <a href="contact.html" class="btn-primary">Hit Us Up →</a>
+      <a href="work.html" class="btn-outline">Our Work</a>
+    </div>
+  </div>
+  <div class="scroll-arrow" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'})">
+    <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="20" stroke-opacity=".4"/>
+      <polyline points="14,19 22,27 30,19"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══ S2: CLIENT LOGO STRIP ══ -->
+<section id="s2" style="padding:5rem 0;background:var(--navy-mid);overflow:hidden;">
+  <div class="logo-track-wrap">
+    <div class="logo-track">
+      <!-- Replace .lp-name text with <img src="assets/img/logo-client.png"> inside .lp-inner -->
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Bufferzone Villa Logo.svg" alt="Bufferzone Villa Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Excel Foods.svg" alt="Excel Foods Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Help on Desk Accountants Final Logo.svg" alt="Help on Desk Accountants Final Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Masana Cash Loans Logo Design.svg" alt="Masana Cash Loans Logo Design" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Mgwebi Trading Logo - Horizontal.svg" alt="Mgwebi Trading Logo - Horizontal" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Molapo Logo.svg" alt="Molapo Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Sunglare Social Care Logo Concept.svg" alt="Sunglare Social Care Logo Concept" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Tusa Consulting Logo.svg" alt="Tusa Consulting Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/Clients/Wabane Chemicals.svg" alt="Wabane Chemicals Logo" class="lp-logo"></div></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Bufferzone Villa Logo.svg" alt="Bufferzone Villa Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Excel Foods.svg" alt="Excel Foods Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Help on Desk Accountants Final Logo.svg" alt="Help on Desk Accountants Final Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Masana Cash Loans Logo Design.svg" alt="Masana Cash Loans Logo Design" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Mgwebi Trading Logo - Horizontal.svg" alt="Mgwebi Trading Logo - Horizontal" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Molapo Logo.svg" alt="Molapo Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Sunglare Social Care Logo Concept.svg" alt="Sunglare Social Care Logo Concept" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/clients/Tusa Consulting Logo.svg" alt="Tusa Consulting Logo" class="lp-logo"></div></div>
+      <div class="logo-pill"><div class="lp-inner"><img src="assets/Clients/Wabane Chemicals.svg" alt="Wabane Chemicals Logo" class="lp-logo"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ S3: SERVICES TILES ══ -->
+<section id="s3">
+  <div class="s3-head fade-up">
+    <div class="section-title">Helping You Do Business <em>Differently</em></div>
+  </div>
+  <div class="tiles-grid">
+
+    <div class="tile fade-up">
+      <div class="tile-image">
+        <img src="assets/tiles/Graphic Design.svg" alt="Graphic Design">
+        <div class="img-ph"><div class="img-ph-icon">✦</div><div class="img-ph-label">Graphic Design</div></div>
+      </div>
+      <div class="tile-body">
+        <div class="tile-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Design That Works</h3>
+        <ul>
+          <li>Logo &amp; brand identity design</li>
+          <li>Social media graphics &amp; templates</li>
+          <li>Flyer, poster &amp; brochure design</li>
+          <li>Infographics &amp; presentation design</li>
+          <li>Packaging &amp; label artwork</li>
+          <li>Marketing collateral &amp; campaigns</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tile fade-up">
+      <div class="tile-image">
+        <img src="assets/tiles/Web Services.svg" alt="Web Services">
+        <div class="img-ph"><div class="img-ph-icon">⬡</div><div class="img-ph-label">Web Development</div></div>
+      </div>
+      <div class="tile-body">
+        <div class="tile-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+        <h3>A Code That Runs</h3>
+        <ul>
+          <li>Website design &amp; build</li>
+          <li>Web hosting</li>
+          <li>Domain registrations</li>
+          <li>Professional email setup</li>
+          <li>Website Security</li>
+          <li>Website maintenance &amp; support</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tile fade-up">
+      <div class="tile-image">
+        <img src="assets/tiles/Printing.svg" alt="Printing">
+        <div class="img-ph"><div class="img-ph-icon">▣</div><div class="img-ph-label">Printing</div></div>
+      </div>
+      <div class="tile-body">
+        <div class="tile-icon"><svg viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+        <h3>Printing What's Quality</h3>
+        <ul>
+          <li>Business stationery</li>
+          <li>Pull-up &amp; large-format banners</li>
+          <li>Flyers, leaflets &amp; catalogues</li>
+          <li>Stickers, labels &amp; decals</li>
+          <li>T-shirt &amp; apparel printing</li>
+          <li>Branded merchandise &amp; signage</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ S4: COUNTERS ══ -->
+<section id="s4" style="padding:1.5rem 5vw;background:var(--navy-mid);">
+  <div class="fade-up" style="text-align:center;">
+    <div class="section-label">Not Just all Talk, Our Numbers Speak</div>
+    <div class="section-title">Impact We've <em>Made</em></div>
+  </div>
+  <div class="counters-grid">
+    <div class="counter-card fade-up">
+      <span class="counter-num" data-target="130" data-decimal="0">0</span>
+      <span class="counter-suffix">+</span>
+      <div class="counter-label">Clients Serviced</div>
+    </div>
+    <div class="counter-card fade-up">
+      <span class="counter-num" data-target="380" data-decimal="0">0</span>
+      <span class="counter-suffix">+</span>
+      <div class="counter-label">Projects Delivered</div>
+    </div>
+    <div class="counter-card fade-up">
+      <div class="counter-num" data-target="4.8" data-decimal="1">0.0</div>
+      <div class="counter-label">Google Rating ★</div>
+    </div>
+    <div class="counter-card fade-up">
+      <div style="display:flex;align-items:baseline;justify-content:center;">
+        <span class="counter-num" data-target="5" data-decimal="0">0</span>
+        <span class="counter-suffix">+</span>
+      </div>
+      <div class="counter-label">Years of Experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ S6: INFO / SITEMAP ══ -->
+<section id="s6">
+  <div class="info-grid">
+    <div class="fade-up">
+      <div><img src="assets/Inked_S6.svg" style="width:160px;" alt="Inked Studios Logo"></div>
+      <p class="info-slogan">Envisioning brands since 2019. We bring bold ideas to life through design, code and ink.</p>
+    </div>
+    <div class="fade-up">
+      <div class="info-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="info-col">
+        <h4>Contact</h4>
+        <p class="contact-detail-line">215 Khathide Street<br>Etwatwa, Gauteng, 1519<br>South Africa</p>
+        <br>
+        <p class="contact-detail-line"><a href="mailto:lucky@inkedstudios.co.za">lucky@inkedstudios.co.za</a></p>
+        <br>
+        <p class="contact-detail-line"><a href="tel:+27 64 705 9325">+27 64 705 9325</a></p>
+        <br>
+        <p class="contact-detail-line" style="font-size:.78rem;color:rgba(136,146,164,.5);">Mon – Fri &nbsp;·&nbsp; 09:00 – 16:30</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ S7: FOOTER BAR ══ -->
+<footer id="s7">
+  <div class="footer-bar">
+    <span class="footer-copy">Inked Studios 2026 &nbsp;|&nbsp; All rights reserved.</span>
+    <div class="social-icons">
+      <a class="social-icon" href="https://x.com/Inkedd_studios" target="_blank" rel="noopener" aria-label="X / Twitter">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.737l7.73-8.835L1.254 2.25H8.08l4.264 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.instagram.com/inkedd_studios?igsh=MWl4b2VjZGhzd2Q4eA==" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.linkedin.com/company/inkeddgs/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.facebook.com/share/1HVpyznXj1/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

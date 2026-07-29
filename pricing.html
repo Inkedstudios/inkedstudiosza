@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pricing — Inked Studios</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- FULLSCREEN MENU -->
+<div class="fullscreen-menu" id="fullMenu">
+  <button class="menu-close" id="menuClose">✕</button>
+  <a href="index.html" class="current">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Work</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <img src="assets/logo.svg" alt="Inked Studios">
+  </a>
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-img">
+    <img src="assets/purp.jpg" alt="Pricing & Packages">
+    <div class="img-ph">
+      <div class="img-ph-icon"></div>
+      <div class="img-ph-label"></div>
+    </div>
+  </div>
+  <div class="page-hero-gradient"></div>
+  <div class="page-hero-lines"></div>
+  <div class="page-hero-accent"></div>
+  <h1>
+    <em style="color:var(--purple-light);font-style:normal;">See? It's Not</em><br>
+    <span class="outline">That Pricey</span>
+  </h1>
+  <p class="page-hero-sub">Transparent, flexible rates, choose a ready-made package or build your own below.</p>
+</header>
+
+<!-- PACKAGES SECTION -->
+<section style="padding:1rem 5vw;">
+  <div class="fade-up">
+    <div class="section-title">Creative <em>Packages</em></div>
+    <p style="color:var(--text-muted);max-width:580px;line-height:1.7;margin-top:1rem;font-size:.93rem;">
+  </div>
+
+  <div class="pricing-grid" style="margin-top:1rem;">
+
+    <!-- STARTER -->
+    <div class="price-card fade-up">
+      <div class="price-name">Launch Package</div>
+      <div class="price-desc">Perfect for new businesses getting their first professional identity.</div>
+      <div class="price-amount">R3 950</div>
+      <div class="price-period">Once-off</div>
+      <ul class="price-features">
+        <li>Logo Design (3 concepts)</li>
+        <li>Social Media Profile Images</li>
+        <li>Logo Variations</li>
+        <li>Colour Palette &amp; Fonts</li>
+        <li>2 Revision Rounds</li>
+        <li>Print-ready Files</li>
+      </ul>
+      <a href="contact.html" class="btn-outline" style="width:100%;justify-content:center;">Get Started →</a>
+    </div>
+
+    <!-- STUDIO (FEATURED) -->
+    <div class="price-card featured fade-up">
+      <div class="price-badge">Most Popular</div>
+      <div class="price-name">Business Identity Package</div>
+      <div class="price-desc">Everything in Launch plus:</div>
+      <div class="price-amount">R6 950</div>
+      <div class="price-period">Once-off</div>
+      <ul class="price-features">
+        <li>Business Card Design</li>
+        <li>Letterhead Design</li>
+        <li>Email Signature Design (html)</li>
+        <li>Invoice Template</li>
+        <li>Brand Style Guide</li>
+        <li>Social Media Branding</li>
+        <li>Google Business Setup</li>
+      </ul>
+      <a href="contact.html" class="btn-primary" style="width:100%;justify-content:center;">Get Started →</a>
+    </div>
+
+    <!-- ELITE -->
+    <div class="price-card fade-up">
+      <div class="price-name">Premium Brand System</div>
+      <div class="price-desc">Everything above plus:</div>
+      <div class="price-amount">R10 950</div>
+      <div class="price-period">Once-off</div>
+      <ul class="price-features">
+        <li>Brand Strategy</li>
+        <li>Comprehensive Brand Guidelines</li>
+        <li>Presentation Template</li>
+        <li>Quotation Template</li>
+        <li>Whatsapp Business Profile Setup</li>
+        <li>One Month Design Support</li>
+        <li>Priority Turnaround</li>
+      </ul>
+      <a href="contact.html" class="btn-outline" style="width:100%;justify-content:center;">Get Started →</a>
+    </div>
+
+    <!-- WEB ONLY -->
+    <div class="price-card fade-up">
+      <div class="price-name">Business Growth Packages</div>
+      <div class="price-desc">We create customised growth solutions based on your business goals. Our solutions may include:</div>
+      <ul class="price-features">
+        <li>Brand Strategy</li>
+        <li>Corporate Identity Design</li>
+        <li>Website Development</li>
+        <li>E-Commerce</li>
+        <li>Business Automation</li>
+        <li>SEO</li>
+        <li>Hosting & Maintenance</li>
+        <li>Social Media Management</li>
+        <li>Printing Solutions</li>
+        <li>Ideal for: Small to Large Businesses</li>
+      </ul>
+      <a href="contact.html" class="btn-outline" style="width:100%;justify-content:center;">Get a Quote →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PACKAGE BUILDER -->
+<section style="background:var(--navy-mid);padding:6rem 5vw;">
+  <div class="fade-up">
+    <div class="section-label">Custom Option</div>
+    <div class="section-title">Build My <em>Package</em></div>
+    <p style="color:var(--text-muted);max-width:560px;line-height:1.7;margin-top:1rem;font-size:.93rem;">
+      Select the services you need. We'll confirm your final quote within 24 hours.
+    </p>
+  </div>
+
+  <div class="builder-wrap">
+
+    <!-- OPTIONS LIST -->
+    <div>
+      <div class="section-label" style="margin:2.5rem 0 1.2rem;">Design Services</div>
+
+      <div class="build-option" onclick="toggleOption(this)" data-price="2950" data-name="Logo Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Logo Design</h4><span>3 Concepts, 3 Revisions</span></div>
+        <div class="build-price-tag">R2 950</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="650" data-name="Business Stationery Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Business Stationery Design</h4><span>Business Card, Letterhead, Invoice Template, Email Signature or Quotation Template</span></div>
+        <div class="build-price-tag">R650</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="800" data-name="Email Signature Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Email Signature Design</h4><span>Professional HTML Email Signature</span></div>
+        <div class="build-price-tag">R800</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="850" data-name="Single-sided Flyer / Brochure Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Single-sided Flyer / Brochure Design</h4><span>A5 or A4 Design</span></div>
+        <div class="build-price-tag">R850</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="1150" data-name="Double-sided Flyer / Brochure Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Double-sided Flyer / Brochure Design</h4><span>A5 or A4 Design</span></div>
+        <div class="build-price-tag">R1 150</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="950" data-name="Poster Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Poster Design</h4><span>Standard Poster Size</span></div>
+        <div class="build-price-tag">R950</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="2500" data-name="Social Media Management">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Social Media Management</h4><span>4x Weekly Posts</span></div>
+        <div class="build-price-tag">R2 500</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="850" data-name="Presentation Folder Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Presentation Folder Design</h4><span>Custom Folder Design</span></div>
+        <div class="build-price-tag">R850</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="2500" data-name="Branded Presentation Template Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Branded Presentation Template Design</h4><span>Custom Branded Presentation Template</span></div>
+        <div class="build-price-tag">R2 500</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="3950" data-name="Company Profile Design">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Company Profile Design</h4><span>Professional Business Profile</span></div>
+        <div class="build-price-tag">From R3 950</div>
+      </div>
+
+      <div class="section-label" style="margin:2.5rem 0 1.2rem;">Web Services</div>
+
+      <div class="build-option" onclick="toggleOption(this)" data-price="1500" data-name="Web Landing Page">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Web Landing Page</h4><span>Single-page conversion site</span></div>
+        <div class="build-price-tag">R1 500</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="7950" data-name="Starter Website">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Starter Website</h4><span>Responsive Design, Contact Form & WhatsApp Integration</span></div>
+        <div class="build-price-tag">From R7 950</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="12950" data-name="Business Website">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Business Website</h4><span>Responsive Design, Advanced Forms, Blog Page, SEO Setup & WhatsApp Integration</span></div>
+        <div class="build-price-tag">From R12 950</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="19950" data-name="E-Commerce Website">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>E-Commerce Website</h4><span>Online Store, Payment Integration, Product Catalogue, Shipping Integration, Customer Accounts</span></div>
+        <div class="build-price-tag">From R19 950</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="350" data-name="Website Hosting">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Website Hosting</h4><span>Monthly Hosting</span></div>
+        <div class="build-price-tag">From R350 p.m.</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="450" data-name="Website Maintenance">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Website Maintenance</h4><span>Monthly Maintenance</span></div>
+        <div class="build-price-tag">From R450 p.m.</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="350" data-name="Domain Registration & Renewal">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Domain Registration & Renewal</h4><span>Annual Registration & Renewal</span></div>
+        <div class="build-price-tag">From R350 p.a.</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="100" data-name="Professional Email Hosting">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Professional Email Hosting</h4><span>Monthly Email Hosting</span></div>
+        <div class="build-price-tag">From R100 p.m.</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="950" data-name="Email Migration">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Email Migration</h4><span>Complete Email Migration</span></div>
+        <div class="build-price-tag">From R950</div>
+      </div>
+
+      <div class="section-label" style="margin:2.5rem 0 1.2rem;">Print Services</div>
+
+      <div class="build-option" onclick="toggleOption(this)" data-price="350" data-name="Business Cards">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Business Cards</h4><span>Gloss or Matte Laminate. Single-sided & Double-sided Options</span></div>
+        <div class="build-price-tag">From R350</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="650" data-name="Flyers">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Flyers</h4><span>A6 to A4. Single-sided & Double-sided Options. Multiple Paper Types</span></div>
+        <div class="build-price-tag">From R650</div>
+      </div>
+      <div class="build-option" onclick="toggleOption(this)" data-price="1400" data-name="Banner Printing">
+        <div class="build-check">✓</div>
+        <div class="build-option-info"><h4>Banner Printing</h4><span>Print Only Price</span></div>
+        <div class="build-price-tag">From R1 400</div>
+      </div>
+    </div>
+
+    <!-- SUMMARY PANEL -->
+    <div>
+      <div class="builder-summary">
+        <h3>Your Package</h3>
+        <div id="summaryItems">
+          <div class="sum-empty">Select services on the left to build your package.</div>
+        </div>
+        <div class="sum-total">
+          <div class="sum-total-label">Estimated Total</div>
+          <div class="sum-total-amount" id="summaryTotal">R0</div>
+        </div>
+        <button
+          class="btn-primary"
+          id="quoteBtn"
+          onclick="requestQuote()"
+          disabled
+          style="opacity:.5;cursor:not-allowed;width:100%;justify-content:center;">
+          Request This Quote →
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Questions About <em style="font-style:normal;color:var(--lavender);">Pricing?</em></h2>
+  <p>Every project is unique. Let's talk about yours.</p>
+  <a href="contact.html" class="btn-primary" style="display:inline-flex;">Talk to Us →</a>
+</div>
+
+<!-- S6: INFO -->
+<section id="s6">
+  <div class="info-grid">
+    <div class="fade-up">
+      <div><img src="assets/Inked_S6.svg" style="width:160px;" alt="Inked Studios Logo"></div>
+      <p class="info-slogan">Envisioning brands since 2019. We bring bold ideas to life through design, code and ink.</p>
+    </div>
+    <div class="fade-up">
+      <div class="info-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="info-col">
+        <h4>Contact</h4>
+        <p class="contact-detail-line">215 Khathide Street<br>Etwatwa, Gauteng, 1519<br>South Africa</p>
+        <br>
+        <p class="contact-detail-line"><a href="mailto:lucky@inkedstudios.co.za">lucky@inkedstudios.co.za</a></p>
+        <br>
+        <p class="contact-detail-line"><a href="tel:+27 64 705 9325">+27 64 705 9325</a></p>
+        <br>
+        <p class="contact-detail-line" style="font-size:.78rem;color:rgba(136,146,164,.5);">Mon – Fri &nbsp;·&nbsp; 09:00 – 16:30</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="s7">
+  <div class="footer-bar">
+    <span class="footer-copy">Inked Studios 2026 &nbsp;|&nbsp; All rights reserved.</span>
+    <div class="social-icons">
+      <a class="social-icon" href="https://x.com/Inkedd_studios" target="_blank" rel="noopener" aria-label="X / Twitter">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.737l7.73-8.835L1.254 2.25H8.08l4.264 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.instagram.com/inkedd_studios?igsh=MWl4b2VjZGhzd2Q4eA==" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.linkedin.com/company/inkeddgs/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+      <a class="social-icon" href="https://www.facebook.com/share/1HVpyznXj1/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

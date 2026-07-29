@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Contact — Inked Studios</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="fullscreen-menu" id="fullMenu">
+  <button class="menu-close" id="menuClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Work</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html" class="current">Contact</a>
+</div>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html"><img src="assets/logo.svg" alt="Inked Studios"></a>
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-img">
+    <img src="assets/Epqkmo30qMb_SbGD52XcizhClZX6i4uoej6D9Fo_OXRAK6c_rhPCGZJ4bxB8vAGl0LHmdcPglM5FxojZ96WtvgvHURZWPtzqQE5px4ZVQw9dnWWQ7CVYTGNXFWhGli3P0E3M_VX909zwOBV3Lu-zaQFgNHFywBgQpQv-csvx3J2izKdOLyr7IA5w8MfQlHEc.jpg" alt="Contact Us">
+    <div class="img-ph">
+      <div class="img-ph-icon"></div>
+      <div class="img-ph-label"></div>
+    </div>
+  </div>
+  <div class="page-hero-gradient"></div>
+  <div class="page-hero-lines"></div>
+  <div class="page-hero-accent"></div>
+  <h1>
+    <em style="color:var(--white);font-style:normal;">Let's Create</em><br>
+    <em style="color:var(--purple-light);font-style:normal;">Some Magic</em>
+  </h1>
+  <p class="page-hero-sub">Ready to bring your vision to life? Tell us about your project and we'll get back to you within 24 hours.</p>
+</header>
+
+<!-- CONTACT LAYOUT -->
+<div class="contact-layout">
+
+  <!-- LEFT: FORM -->
+  <div class="fade-up">
+    <h2>Start Your <em>Project</em></h2>
+    <p>Fill in the form below and we'll get back to you within 24 hours with a tailored quote.</p>
+
+    <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+      <div class="form-group" style="margin-bottom:0;">
+        <label>First Name</label>
+        <input type="text" placeholder="John">
+      </div>
+      <div class="form-group" style="margin-bottom:0;">
+        <label>Last Name</label>
+        <input type="text" placeholder="Doe">
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-top:1.4rem;">
+      <label>Email Address</label>
+      <input type="email" placeholder="john@example.com">
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" placeholder="+27 00 000 0000">
+    </div>
+
+    <div class="form-group">
+      <label>Service Required</label>
+      <select>
+        <option value="">Select a service…</option>
+        <option>Graphic Design</option>
+        <option>Web Development</option>
+        <option>Brand Identity</option>
+        <option>Printing</option>
+        <option>Full Package</option>
+        <option>Other / Not Sure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Budget Range</label>
+      <select>
+        <option value="">Select your budget…</option>
+        <option>Under R2,000</option>
+        <option>R2,000 – R5,000</option>
+        <option>R5,000 – R10,000</option>
+        <option>R10,000 – R20,000</option>
+        <option>R20,000+</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Tell Us About Your Project</label>
+      <textarea id="contactTextarea" placeholder="Describe your project, goals, and any specific requirements…"></textarea>
+    </div>
+
+    <button class="btn-primary" onclick="submitForm(this)" style="width:100%;justify-content:center;">
+      Send Message →
+    </button>
+  </div>
+
+  <!-- RIGHT: CONTACT DETAILS + MAP -->
+  <div class="fade-up">
+    <div class="section-label" style="font-size:2rem;margin-bottom:2.8rem;">
+      <h2>We'd Love To <em>Hear from You</em></h2>
+    </div>
+
+    <div class="c-detail">
+      <div class="c-icon">📍</div>
+      <div class="c-detail-text">
+        <h4>Studio Address</h4>
+        <p>215 Khathide Street<br>Etwatwa, Gauteng, 1519<br>South Africa</p>
+      </div>
+    </div>
+
+    <div class="c-detail">
+      <div class="c-icon">✉</div>
+      <div class="c-detail-text">
+        <h4>Email Us</h4>
+        <p><a href="mailto:lucky@inkedstudios.co.za">lucky@inkedstudios.co.za</a></p>
+      </div>
+    </div>
+
+    <div class="c-detail">
+      <div class="c-icon">📞</div>
+      <div class="c-detail-text">
+        <h4>Call or WhatsApp</h4>
+        <p><a href="tel:+27 64 705 9325">+27 64 705 9325</a></p>
+        <p style="font-size:.78rem;margin-top:.25rem;">Mon – Fri &nbsp;·&nbsp; 08:00 – 17:00</p>
+      </div>
+    </div>
+
+    <div class="c-detail">
+      <div class="c-icon">⏱</div>
+      <div class="c-detail-text">
+        <h4>Response Time</h4>
+        <p>We reply to all enquiries within 24 hours.</p>
+      </div>
+    </div>
+
+    <!-- GOOGLE MAP -->
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.5!2d28.4748456!3d-26.1177739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953b492ff55dd3%3A0x3e4d613c8447be60!2sInked%20Studios%2C%20215%20khathide%20street%2C%20Etwatwa%2C%201519!5e0!3m2!1sen!2sza!4v1699000000000!5m2!1sen!2sza"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Inked Studios Location">
+      </iframe>
+    </div>
+  </div>
+
+</div><!-- /contact-layout -->
+
+<!-- S6 -->
+<section id="s6">
+  <div class="info-grid">
+    <div class="fade-up">
+      <div><img src="assets/Inked_S6.svg" style="width:160px;" alt="Inked Studios Logo"></div>
+      <p class="info-slogan">Envisioning brands since 2019. We bring bold ideas to life through design, code and ink.</p>
+    </div>
+    <div class="fade-up">
+      <div class="info-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="info-col">
+        <h4>Contact</h4>
+        <p class="contact-detail-line">215 Khathide Street<br>Etwatwa, Gauteng, 1519<br>South Africa</p>
+        <br>
+        <p class="contact-detail-line"><a href="mailto:lucky@inkedstudios.co.za">lucky@inkedstudios.co.za</a></p>
+        <br>
+        <p class="contact-detail-line"><a href="tel:+27 64 705 9325">+27 64 705 9325</a></p>
+        <br>
+        <p class="contact-detail-line" style="font-size:.78rem;color:rgba(136,146,164,.5);">Mon – Fri &nbsp;·&nbsp; 09:00 – 16:30</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S7 -->
+<footer id="s7"><div class="footer-bar">
+  <span class="footer-copy">Inked Studios 2026 &nbsp;|&nbsp; All rights reserved.</span>
+  <div class="social-icons">
+    <a class="social-icon" href="https://x.com/Inkedd_studios" target="_blank" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.737l7.73-8.835L1.254 2.25H8.08l4.264 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    <a class="social-icon" href="https://www.instagram.com/inkedd_studios?igsh=MWl4b2VjZGhzd2Q4eA==" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+    <a class="social-icon" href="https://www.linkedin.com/company/inkeddgs/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+    <a class="social-icon" href="https://www.facebook.com/share/1HVpyznXj1/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+  </div>
+</div></footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
